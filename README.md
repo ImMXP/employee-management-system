@@ -1,68 +1,48 @@
-# 🏢 نظام إدارة الموظفين القائم على البرمجة الشيئية (OOP-Based Employee Management System)
+# 🏢 نظام إدارة الموظفين (OOP-Based Employee Management System)
 
-## ✨ شارات المشروع (Project Status)
+<div align="center">
 
-[![لغة البرمجة: Java](https://img.shields.io/badge/Language-Java-blue.svg)](https://www.java.com/)
+![Java](https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![OOP](https://img.shields.io/badge/Concepts-OOP-blue?style=for-the-badge)
 
-[![GitHub stars](https://img.shields.io/github/stars/ImMXP/OOP-Based-Employee-Management-System)](https://github.com/ImMXP/OOP-Based-Employee-Management-System/stargazers)
 
----
+**نظام كونسول (Console App) تفاعلي لإدارة بيانات الموظفين باستخدام مفاهيم البرمجة الشيئية.**
 
-## 💡 نظرة عامة - المفهوم
-
-هذا المشروع يمثل **نظاماً مبسطاً لإدارة الموظفين** تم تطويره باستخدام لغة البرمجة **Java** مع التركيز القوي على تطبيق مفاهيم **البرمجة الشيئية (OOP)** الأساسية: التغليف (Encapsulation)، الوراثة (Inheritance)، وتعدد الأشكال (Polymorphism).
-
-الهدف هو بناء هيكل كلاسات واضح وفعال يُمكّن من إضافة أنواع موظفين جديدة بسهولة.
-
-## 🚀 الميزات الرئيسية
-
-* **تصنيف الموظفين:** يدعم النظام تصنيف الموظفين إلى فئات متخصصة (`Engineer`، `Intern`، `Manager`) ترث جميعها من فئة أساسية (`Employee`).
-* **هيكل بيانات مُنظَّم:** تطبيق مبادئ OOP لضمان كود نظيف ومقروء.
-* **قابلية التوسع:** سهولة إضافة خصائص أو سلوكيات جديدة للموظفين دون الحاجة لإعادة هيكلة النظام بالكامل.
-* **وحدة اختبار مُدمَجة:** يتضمن الملف `TestEmployee.java` كمنفذ رئيسي لاختبار جميع وظائف الكلاسات.
-
-## 🛠️ التقنيات المستخدمة (Tech Stack)
-
-| التقنية | الوصف |
-| :--- | :--- |
-| **Java** | اللغة الرئيسية المعتمدة في تطوير النظام. |
-| **OOP** | المنهجية التصميمية لنمذجة الكائنات والعلاقات. |
-| **UML** | (اختياري) يتضمن المستودع مخطط UML يوضح علاقات الكلاسات وهيكلها. |
-
-## ⚙️ البدء والتشغيل
-
-لتشغيل كود Java هذا محلياً، اتبع الخطوات التالية:
-
-### المتطلبات الأساسية (Prerequisites)
-
-* **Java Development Kit (JDK):** الإصدار 8 أو أعلى.
-* **بيئة تطوير متكاملة (IDE):** مثل IntelliJ IDEA, Eclipse, أو VS Code مع دعم Java.
-
-### خطوات التشغيل
-
-1.  **استنساخ المستودع (Clone the repository):**
-    ```bash
-    git clone [https://github.com/ImMXP/OOP-Based-Employee-Management-System.git](https://github.com/ImMXP/OOP-Based-Employee-Management-System.git)
-    ```
-2.  **فتح المشروع:**
-    * افتح مجلد `OOP-Based-Employee-Management-System` في IDE الذي تختاره.
-3.  **تجميع وتشغيل الملف:**
-    * قم بتشغيل الملف `TestEmployee.java` (Run `TestEmployee.java`).
-
-## 📁 هيكل الكلاسات
-
-| اسم الملف | الوصف |
-| :--- | :--- |
-| `Employee.java` | الكلاس الأساسي الذي يحتوي على الخصائص العامة للموظف. |
-| `Engineer.java` | كلاس يمثل فئة المهندسين ويرث من `Employee`. |
-| `Intern.java` | كلاس يمثل فئة المتدربين ويرث من `Employee`. |
-| `Manager.java` | كلاس يمثل فئة المدراء ويرث من `Employee`. |
-| `TestEmployee.java` | كلاس الاختبار والتشغيل الرئيسي (Main Class). |
+</div>
 
 ---
 
-## 👨‍💻 المطورون
-* **Moha0x**
-* **Teammate**
+## 📝 نبذة عن المشروع
+
+هذا المشروع هو تطبيق عملي لمفاهيم **البرمجة الكائنية (OOP)** في لغة Java. يتيح النظام للمسؤولين (Admins) تسجيل الدخول وإدارة سجلات الموظفين من مختلف الأقسام (مدراء، مهندسين، متدربين) وتخزين البيانات مؤقتاً ومعالجتها.
+
+تم التركيز في التصميم على:
+* **الوراثة (Inheritance):** جميع الفئات ترث من الفئة الأم `Employee`.
+* **تعدد الأشكال (Polymorphism):** معالجة أنواع مختلفة من الموظفين بنفس الطريقة.
+* **التغليف (Encapsulation):** حماية البيانات باستخدام `private` fields و `public` methods.
 
 ---
+
+## ✨ المميزات الرئيسية
+
+1.  **🔐 نظام تسجيل دخول آمن:** التحقق من اسم المستخدم وكلمة المرور قبل الوصول للنظام.
+2.  **📋 إدارة الموظفين:**
+    * إضافة **مدراء (Managers)** مع احتساب المكافآت.
+    * إضافة **مهندسين (Engineers)**.
+    * إضافة **متدربين (Interns)**.
+3.  **📊 عرض البيانات:** عرض قائمة شاملة ومنظمة لجميع الموظفين المضافين.
+4.  **💾 تخزين البيانات:** استخدام المصفوفات (Arrays) لتخزين وإدارة عدد كبير من الموظفين أثناء تشغيل البرنامج.
+
+---
+
+## 🛠️ هيكل المشروع (Project Structure)
+
+```text
+OOP-Based-Employee-Management-System/
+├── 📄 TestEmployee.java       # (Main Class) نقطة انطلاق البرنامج والقوائم
+├── 📄 Employee.java           # الفئة الأساسية (Parent Class)
+├── 📄 Manager.java            # فئة المدراء (ترث من Employee)
+├── 📄 Engnieer.java           # فئة المهندسين (ترث من Employee)
+├── 📄 Intern.java             # فئة المتدربين (ترث من Employee)
+├── 📄 AdminstratorDATA.java   # قاعدة بيانات المسؤولين (Login Credentials)
+└── 📄 README.md               # ملف التوثيق
