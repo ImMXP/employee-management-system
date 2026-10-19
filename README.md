@@ -58,3 +58,14 @@ cd employee-management-system
 javac *.java
 java TestEmployee
 ```
+
+### 🔑 بيانات الدخول التجريبية (Demo Login)
+
+| Username | Password |
+| :-- | :-- |
+| `admin1` | `password1` |
+| `admin2` | `password2` |
+| `admin3` | `password3` |
+
+> حسابات تجريبية للتشغيل المحلي فقط، ومعرّفة في `AdminstratorDATA.java`.
+> Sample accounts for local testing only, defined in `AdminstratorDATA.java`.
