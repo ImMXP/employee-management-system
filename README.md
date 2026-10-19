@@ -5,7 +5,6 @@
 ![Java](https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![OOP](https://img.shields.io/badge/Concepts-OOP-blue?style=for-the-badge)
 
-
 **نظام كونسول (Console App) تفاعلي لإدارة بيانات الموظفين باستخدام مفاهيم البرمجة الشيئية.**
 
 </div>
@@ -38,11 +37,24 @@
 ## 🛠️ هيكل المشروع (Project Structure)
 
 ```text
-OOP-Based-Employee-Management-System/
+employee-management-system/
 ├── 📄 TestEmployee.java       # (Main Class) نقطة انطلاق البرنامج والقوائم
 ├── 📄 Employee.java           # الفئة الأساسية (Parent Class)
 ├── 📄 Manager.java            # فئة المدراء (ترث من Employee)
 ├── 📄 Engnieer.java           # فئة المهندسين (ترث من Employee)
 ├── 📄 Intern.java             # فئة المتدربين (ترث من Employee)
 ├── 📄 AdminstratorDATA.java   # قاعدة بيانات المسؤولين (Login Credentials)
+├── 📄 UML.pdf                 # مخطط UML للتصميم
 └── 📄 README.md               # ملف التوثيق
+```
+
+---
+
+## ▶️ طريقة التشغيل (How to Run)
+
+```bash
+git clone https://github.com/ImMXP/employee-management-system.git
+cd employee-management-system
+javac *.java
+java TestEmployee
+```
